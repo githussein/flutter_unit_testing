@@ -1,6 +1,6 @@
 # unit_testing
 
-Practicing fundemental unit testing technics.
+Practicing fundamental unit testing technics.
 
 ## Getting Started
 

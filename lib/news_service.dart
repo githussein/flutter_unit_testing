@@ -10,7 +10,7 @@ class NewsService {
           ));
 
   Future<List<Article>> getArticles() async {
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 2));
     return _articles;
   }
 }

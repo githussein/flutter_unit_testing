@@ -31,10 +31,18 @@ void main() {
   });
 
   test(
-    "initial values are correct",
+    'initial values are correct',
     () {
       expect(sut.articles, []);
       expect(sut.isLoading, false);
     },
   );
+
+  group('getArticlea', () {
+    test('get articles using the NewsServices', () async {
+      when(() => mockNewsService.getArticles()).thenAnswer((_) async => []);
+      await sut.getArticles();
+      verify(() => mockNewsService.getArticles()).called(1);
+    });
+  });
 }
